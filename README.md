@@ -1,64 +1,57 @@
 ![](logo.png)
-
-
 # Bossapy
 
-[EN](README_EN.md) version
+This repository is where development of python version of connection to Bossa API algotrading interface takes place. 
 
-Implementacja interfejsu do algo-tradingu obsługującego Bossa API w Pythonie. Jest to projekt open-source, niezwiązany z DM BOŚ.
+This is an open-source project without affiliation to DM BOŚ brokerage. So far no python bindings for Bossa API are avaliable thus the `bossapy` tries to fill that gap. 
 
-Projekt powstał, by ułatwić korzystanie z możliwości API udostępnionego przez DM BOSSA w Pythonie.
+The project was initially created by Fey and Jarek to facilitate data gathering, and we are planning to extend it with simple algotrading strategies via Bossa API in python ecosystem. We do all of our development work here. If you are willing to contribute you are welcome. 
 
-Bibliotekę udostępniamy na licencji Apache v2.0 - wraz z pełnym, otwartym
-kodem źródłowym. W ten sposób każdy może ją wykorzystać w swoich projektach -
-nieważne, czy to projekt komercyjny, czy darmowy, otwarty czy też nie... 
-Obowiązuje jedynie zasada, by nie zabrakło tam nigdy wzmianki o pierwotnych
-autorzach (Feyy i Jarek) i wszystkich kolejnych (jeśli tacy się pojawią
-i będą udostepniać swoje modyfikacje, do czego oczywiście zachęcam).
+This source code is available to everyone under the Apache v2.0 license.  
 
-Feyy
+[PL](README_PL.md) version of readme
 
+# Installation
+In order to use the Bossa API, it is necessary to have a brokerage account with DM BOŚ.
 
-# Instalacja
-W celu skorzystania z Bossa API konieczne jest posiadanie konta maklerskiego w DM BOŚ.
-
-### Platforma transakcyjna NOL
-Do zainstalowanie `bossapy` potrzebna jest instalacja programu 
-[NOL](https://bossa.pl/oferta/narzedzia/bossanol3). Jest to program będący platformą trasakcyjną, przez którą przesyłane są dane do Bossa API.
-Podręcznik użytkownika dla platformy NOL jest dostępny w [pdf](https://bossa.pl/sites/b30/files/2021-04/document/Podrecznik_bossaNOL3.pdf)
-
-### Biblioteka bossapy
-Przenieś pliki z repozytorium `bossapy` do dowolnego lokalnego katalogu. 
-
-# Uruchamianie
-
-1. Zaloguj się do internetowego systemu transakcyjnego bossa przez przeglądarkę [bossa.pl](https://online.bossa.pl/bossaapp/login)
-2. Przejdź do zakładki Notowania i kliknij urochom NOL, co uruchomi program NOL na komputerze lokalnym. W ten sposób program NOL łączy się z kontem maklerskim DM BOS.
-3. Uruchom plik main.py
+### NOL trading platform
+To use `bossapy` you must have [NOL](https://bossa.pl/oferta/narzedzia/bossanol3) software installed. You need to login to your DM BOŚ account to download NOL installation binaries. NOL is avaliable for Windows platform. NOL is a program through which data is made avaliable to `bossapy` via Bossa API.
+In case of any issues with NOL please consult user NOL [manual](https://bossa.pl/sites/b30/files/2021-04/document/Podrecznik_bossaNOL3.pdf).
 
 
-## Współpraca 🙋‍♂️?
+There is also [Bossa API manual](https://bossa.pl/sites/b30/files/2021-04/document/Podrecznik_bossaAPI.pdf) avaliable.  .
 
-Współpraca przy projekcie jest mile widziana. Zobacz [Zasady kontrybucji](CONTRIBUTING.md). Możesz też rzucić okiem na [bieżące kwestie](https://github.com/FeyyM/bossapy/issues) for getting more information about current or upcoming tasks.
 
-## Dyskusja 💬
+### __`bossapy`__ module
+Move the files from the current [git repository](https://github.com/FeyyM/bossapy) to any local directory in order to launch the module.
 
-W razie pytań, bądź wątpliwosci możesz rozpocząć dyskusję. 
-[Dyskusja](https://github.com/FeyyM/bossapy/discussions).
+# Launching
 
-## Licencja
+In order to launch 'bossapy` follow these steps:
+1. Log in to the DM BOŚ online trading system via the browser [login](https://online.bossa.pl/bossaapp/login)
+2. Go to the Notowania tab and click run NOL, which will launch the NOL program on your local computer. In this way, the NOL program logs to your DM BOS brokerage account. The data connection to `bossapy` is then open. On initial run of NOL program you need to enable Bossa API interface. The switch is avaliable in Narzędzia menu.
+3. Run main.py from the local directory of `bossapy`.
 
-```
-Prawa autorskie 2022 Jarosław Kuś, FeyyM
 
-Licencjonowane na licencji Apache, wersja 2.0 („Licencja”);
-nie możesz używać tego pliku, chyba że jest to zgodne z Licencją.
-Kopię Licencji można uzyskać pod adresem
+## Contributing 🙋‍♂️?
 
-     http://www.apache.org/licenses/LICENSE-2.0
+Contributing to the project is welcome. See [Contribution Policy](CONTRIBUTING.md). You can also take a look at [current issues](https://github.com/FeyyM/bossapy/issues) for getting more information about current or upcoming tasks.
 
-O ile nie wymaga tego obowiązujące prawo lub nie uzgodniono tego na piśmie, oprogramowanie
-rozpowszechniane na podstawie Licencji są rozpowszechniane na ZASADZIE „TAK JAK JEST”,
-BEZ GWARANCJI ANI WARUNKÓW JAKIEGOKOLWIEK RODZAJU, wyraźnych lub dorozumianych.
-Zobacz Licencję, aby zapoznać się z uprawnieniami dotyczącymi konkretnego języka i
-ograniczenia wynikające z Licencji.
+## Discussion 💬
+
+If you have any questions or doubts, you can start a discussion.
+[Discussion](https://github.com/FeyyM/bossapy/discussions).
+
+## License
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
